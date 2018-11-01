@@ -33,10 +33,5 @@
     "jest": "23.6.0",
     "jest-extended": "0.8.1",
     "regenerator-runtime": "0.12.1"
-  },
-  "babel": {
-    "presets": [
-      "./.babelrc"
-    ]
   }
 }
