@@ -1,0 +1,44 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                },
+                "modules": "commonjs"
+            }
+        ],
+        [
+            "@babel/preset-react"
+        ]
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                [
+                    "@babel/preset-env",
+                    {
+                        "targets": {
+                            "node": "current"
+                        }
+                    }
+                ],
+                [
+                    "@babel/preset-react"
+                ]
+            ]
+        }
+    },
+    "plugins": [
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-transform-classes",
+        "@babel/plugin-proposal-async-generator-functions",
+        "@babel/plugin-transform-async-to-generator"
+    ],
+    "ignore": [
+        "**/__tests__/data/*.js"
+    ]
+}
