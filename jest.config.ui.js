@@ -36,8 +36,6 @@ module.exports = {
     // The path to a module that runs some code to configure or set up the testing framework before each test
     setupTestFrameworkScriptFile: './resources/ui-tests-setup-script.js',
 
-    // A list of paths to snapshot serializer modules Jest should use for snapshot testing
-    snapshotSerializers: ['enzyme-to-json/serializer'],
 
     // The test environment that will be used for testing
     testEnvironment: 'jsdom',
